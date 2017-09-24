@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+}
+
+
 .headerClass {
     background-color: #ffffff;
     text-align: center;
@@ -7,7 +12,6 @@
     border-bottom: solid #dddddd 3px;
     margin: 0 auto;
 }
-
 
 .jDaniel {
     float: left;
@@ -36,9 +40,8 @@
 }
 
 .bodyClass {
-    background-image: url("../images/witewall_3.png");
-    background-color: #dddddd;
     
+    /*background-color: #dddddd;*/
     width: 960px;
     margin: 0 auto;
     padding: 0px;
@@ -111,7 +114,7 @@
 
 
 .footer {
-    clear: both;
+    /*clear: both;*/
     background-color: #666666;
     width: 960px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -120,7 +123,7 @@
     text-align: center;
     line-height: 22px;
     padding: 0px;
-    height: 60px;
+    height: 75px;
     border-top-style: solid;
     border-top-width: 10px;
     border-top-color: #4aaaa5;
@@ -132,15 +135,28 @@ body {
     height: 100%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+.page-wrap {
+    display: block;
+    min-height: 100%;
+    width: 960px;
+    background-image: url("../images/witewall_3.png");
+    /* equal to footer height */
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: -75px;
+
 }
 
-.content {
-    flex: 1 0 auto;
+.page-wrap:after {
+    content: "";
+    display: block;
 }
 
+.footer,
+.page-wrap:after {
+    height: 75px;
+}
 
 
 /* Contact Form CSS */
@@ -220,6 +236,8 @@ input[type=submit]:hover {
 }
 
 
+
+
 /* Portfolio CSS */
 
 #portfolioMain {
@@ -243,8 +261,8 @@ input[type=submit]:hover {
     width: 250px;
     height: 200px;
     padding: 0px;
-    margin: 20px 20px 20px 0px;
-    background-image: url("../images/jenga.jpg");
+    margin: 15px 20px 20px 0px;
+    background-image: url("../images/jenga250.jpg");
     float: left;
 }
 
@@ -252,8 +270,8 @@ input[type=submit]:hover {
     width: 250px;
     height: 200px;
     padding: 0px;
-    margin: 20px 20px 20px 20px;
-    background-image: url("../images/trivia200.jpg");
+    margin: 15px 20px 20px 20px;
+    background-image: url("../images/trivia250.jpg");
     float: right;
 }
 
@@ -261,8 +279,8 @@ input[type=submit]:hover {
     width: 250px;
     height: 200px;
     padding: 0px;
-    margin: 20px;
-    background-image: url("../images/piraty200.jpg");
+    margin: 15px 20px 20px 20px;
+    background-image: url("../images/piraty250.jpg");
     float: left;
 }
 
@@ -270,8 +288,8 @@ input[type=submit]:hover {
     width: 250px;
     height: 200px;
     padding: 0px;
-    margin: 20px;
-    background-image: url("../images/pirates200.jpg");
+    margin: 15px 20px 20px 20px;
+    background-image: url("../images/pirates250.jpg");
     float: right;
 }
 
@@ -279,8 +297,8 @@ input[type=submit]:hover {
     width: 250px;
     height: 200px;
     padding: 0px;
-    margin: 20px;
-    background-image: url("../images/rplss200.jpg");
+    margin: 15px 20px 20px 20px;
+    background-image: url("../images/rplss250.jpg");
     float: left;
 }
 
